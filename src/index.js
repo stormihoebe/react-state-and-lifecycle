@@ -6,10 +6,12 @@ import Clock from './Clock';
 import Grandparent from './Grandparent';
 import registerServiceWorker from './registerServiceWorker';
 import Greeting from './Greeting';
+import Menu from './Menu';
 
 
 ReactDOM.render(
   <div>
+    <Menu/>
     <Clock/>
     <Grandparent/>
     <Greeting isUser={true} unreadMessages={33}/>
