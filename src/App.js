@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Goodbye from './Goodbye';
-import Clock from './Clock'
+import Clock from './Clock';
+import Greeting from './Greeting';
 //props ={
 // name: "Stormi"
 //}
@@ -14,8 +15,9 @@ class App extends Component {
       <div className="App">
         <div className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React, {name}!</h2>
           <Clock/>
+          <Greeting/>
+
         </div>
         <p className="App-intro">
           To get started, edit <code>src/App.js</code> and save to reload.
