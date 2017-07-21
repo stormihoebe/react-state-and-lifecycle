@@ -7,6 +7,7 @@ import Grandparent from './Grandparent';
 import registerServiceWorker from './registerServiceWorker';
 import Greeting from './Greeting';
 import Menu from './Menu';
+import ColorChanger from './ColorChanger.js';
 
 
 ReactDOM.render(
@@ -15,6 +16,7 @@ ReactDOM.render(
     <Clock/>
     <Grandparent/>
     <Greeting isUser={true} unreadMessages={33}/>
+    <ColorChanger/>
   </div>
 
 
