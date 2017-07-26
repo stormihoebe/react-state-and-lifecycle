@@ -4,6 +4,7 @@ import './App.css';
 import Goodbye from './Goodbye';
 import Clock from './Clock';
 import Greeting from './Greeting';
+
 //props ={
 // name: "Stormi"
 //}

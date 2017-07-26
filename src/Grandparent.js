@@ -16,7 +16,7 @@ class Grandparent extends React.Component{
     const {firstName, lastName} = this.state;
     return(
       <div>
-        <h1>My grandpa{"'"}s name is {firstName + " " + lastName}</h1>
+        <p>My grandpa{"'"}s name is {firstName + " " + lastName}</p>
         <Parent lastName={this.state.lastName}/>
       </div>
     )
@@ -34,7 +34,7 @@ class Parent extends React.Component{
   render(){
     return(
       <div>
-        <h2>My dad has the last name of {this.props.lastName}. His first name is {this.state.firstName}. I am his only child. My name is {this.state.children[0]}. {this.state.children[1]} is our dog{"'"}s name.</h2>
+        <p>My dad has the last name of {this.props.lastName}. His first name is {this.state.firstName}. I am his only child. My name is {this.state.children[0]}. {this.state.children[1]} is our dog{"'"}s name.</p>
         <Child lastName={this.props.lastName}/>
       </div>
     )
@@ -42,7 +42,7 @@ class Parent extends React.Component{
 }
 function Child(props){
   return(
-    <h3>My last name is {props.lastName}</h3>
+    <h5>My last name is {props.lastName}</h5>
   )
 }
 
